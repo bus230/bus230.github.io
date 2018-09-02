@@ -1,4 +1,20 @@
 {
   "name": "Bus 230 Nice - Sophia Antipolis - ligne 230",
-  "short_name": "Bus 230"
+  "short_name": "Bus 230",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF"
 }

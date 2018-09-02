@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="Description" content="Your guide to the 230 Bus Nice - Sophia Antipolis">
+  <meta name="theme-color" content="#FFFFFF" />
   <title>Bus 230 Nice - Sophia Antipolis - ligne 230</title>
   <link rel="manifest" href="/manifest.json">
   <style type="text/css">
@@ -283,6 +284,16 @@
         document.querySelectorAll('[id]').forEach(function (item) {
           item.innerHTML = `<a href="#${item.id}">${item.innerHTML}</a>`
         });
+
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('service-worker.js')
+            .then(function (registration) {
+              console.log('Registered:', registration);
+            })
+            .catch(function (error) {
+              console.log('Registration failed: ', error);
+            });
+        }
       </script>
 
 </body>
